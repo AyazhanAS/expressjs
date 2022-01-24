@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/head"); %>
+</head>
+<body>
+    <%- include("./partials/navbar"); %>
+    <h1>Features</h1>
+    <div id="app">
+        <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status" v-if="servers.length===0">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        <ul class="list-group">
+
+        </ul>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <script src="/app.js"></script>
+</body>
+</html>
